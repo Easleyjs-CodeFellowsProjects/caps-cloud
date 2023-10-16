@@ -11,10 +11,10 @@ const pickupDetails = {
 }
 
 // Adds a new entry to the packages SQS queue via the "pickups" SNS topic.
-//myVendor.createNewPickup(pickupDetails) // working
+myVendor.createNewPickup(pickupDetails)
 
 // Should recieve pickup via packages SQS queue, then create a new delivery in the store's SQS queue.
-//myDriver.getPickups(); // working
+myDriver.getPickups();
 
 // Should get delivery from SQS store delivery queue and output thank you.
 myVendor.getDelivered();
